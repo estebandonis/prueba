@@ -4,6 +4,7 @@
     package="com.uvg.groceryplanning">
 
     <application
+        android:name="com.uvg.groceryplanning.CuponesApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"

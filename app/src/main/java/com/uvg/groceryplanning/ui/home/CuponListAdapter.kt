@@ -4,12 +4,15 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
+import com.uvg.groceryplanning.database.Cupones.Cupon
 import com.uvg.groceryplanning.databinding.CuponItemBinding
 import com.uvg.groceryplanning.databinding.FragmentHomeBinding
 import java.lang.Exception
 
 class cuponListAdapter() : RecyclerView.Adapter<cuponListAdapter.cuponListHolder>() {
     inner class cuponListHolder(val binding: CuponItemBinding) : RecyclerView.ViewHolder(binding.root)
+
+    private var list = mutableListOf<Cupon>()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): cuponListHolder {
         val binding = CuponItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
