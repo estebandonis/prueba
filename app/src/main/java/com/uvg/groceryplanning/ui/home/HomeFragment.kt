@@ -34,7 +34,6 @@ class HomeFragment : Fragment() {
         recyclerView = binding.recyclerView
         super.onViewCreated(view, savedInstanceState)
 
-
         recyclerView.layoutManager = LinearLayoutManager(context)
         val adapter = cuponListAdapter()
         recyclerView.adapter = adapter

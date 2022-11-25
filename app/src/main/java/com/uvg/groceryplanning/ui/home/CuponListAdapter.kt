@@ -15,7 +15,7 @@ class cuponListAdapter() : RecyclerView.Adapter<cuponListAdapter.cuponListHolder
 
     val cupon1 = Cupon(0, "50% de descuento", "papel", "walmart", "disponible")
     val cupon2 = Cupon(1, "30% de descuento", "toallas", "paiz", "disponible")
-    val cupon3 = Cupon(2, "40% de descuento", "ranas", "novex", "disponible")
+    val cupon3 = Cupon(2, "40% de descuento", "Madera", "novex", "disponible")
 
     val list = mutableListOf<Cupon>(cupon1,cupon2,cupon3)
 
@@ -49,8 +49,6 @@ class cuponListAdapter() : RecyclerView.Adapter<cuponListAdapter.cuponListHolder
             .into(imageView, object : Callback {
                 override fun onSuccess() {
                     // no-op
-                }
-
                 override fun onError(e: Exception?) {
                     e?.printStackTrace()
                 }
