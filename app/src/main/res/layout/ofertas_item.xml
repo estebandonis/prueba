@@ -8,6 +8,7 @@
     android:layout_marginTop="16dp"
     android:layout_marginEnd="20dp"
     android:layout_marginStart="50dp"
+    android:backgroundTint="@color/blanquito"
     card_view:cardCornerRadius="400dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -16,9 +17,13 @@
 
         <TextView
             android:id="@+id/oferta"
-            android:layout_width="143dp"
-            android:layout_height="35dp"
+            android:layout_width="147dp"
+            android:layout_height="45dp"
             android:padding="8dp"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
             card_view:layout_constraintBottom_toTopOf="@+id/producto"
             card_view:layout_constraintEnd_toEndOf="parent"
             card_view:layout_constraintStart_toStartOf="parent"
@@ -27,10 +32,14 @@
 
         <TextView
             android:id="@+id/producto"
-            android:layout_width="181dp"
-            android:layout_height="37dp"
+            android:layout_width="184dp"
+            android:layout_height="43dp"
             android:layout_marginTop="60dp"
             android:padding="8dp"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
             card_view:layout_constraintBottom_toTopOf="@+id/supermercado"
             card_view:layout_constraintEnd_toEndOf="parent"
             card_view:layout_constraintStart_toStartOf="parent"
@@ -42,6 +51,8 @@
             android:layout_width="178dp"
             android:layout_height="36dp"
             android:padding="8dp"
+            android:textAlignment="center"
+            android:textSize="16sp"
             card_view:layout_constraintBottom_toBottomOf="parent"
             card_view:layout_constraintEnd_toEndOf="parent"
             card_view:layout_constraintStart_toStartOf="parent"

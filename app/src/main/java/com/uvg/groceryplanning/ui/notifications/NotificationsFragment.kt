@@ -32,6 +32,8 @@ class NotificationsFragment : Fragment() {
     val producto1 = Producto(0, "Leche", "lacteos", "walmart", "Producto marca Pinito")
     val producto2 = Producto(1, "Jugo", "bebidas", "paiz", "Producto marca Jumex")
     val producto3 = Producto(2, "Jabon", "higiene", "la torre", "Producto marca Dove")
+    val producto4 = Producto(3, "Shampoo", "higiene", "Pricesmart", "Producto marca Pantene")
+    val producto5 = Producto(4, "Bebida Deportiva", "bebidas", "Pricesmart", "Producto marca Powerade")
 
     val list = mutableListOf<Producto>(producto1, producto2, producto3)
 

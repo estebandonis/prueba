@@ -13,9 +13,9 @@ import java.lang.Exception
 class cuponListAdapter() : RecyclerView.Adapter<cuponListAdapter.cuponListHolder>() {
     inner class cuponListHolder(val binding: CuponItemBinding) : RecyclerView.ViewHolder(binding.root)
 
-    val cupon1 = Cupon(0, "50% de descuento", "papel", "walmart", "disponible")
-    val cupon2 = Cupon(1, "30% de descuento", "toallas", "paiz", "disponible")
-    val cupon3 = Cupon(2, "40% de descuento", "Madera", "novex", "disponible")
+    val cupon1 = Cupon(0, "50% de descuento en", "papel", "walmart", "disponible")
+    val cupon2 = Cupon(1, "30% de descuento en", "toallas", "paiz", "disponible")
+    val cupon3 = Cupon(2, "40% de descuento en", "Madera", "novex", "disponible")
 
     val list = mutableListOf<Cupon>(cupon1,cupon2,cupon3)
 
