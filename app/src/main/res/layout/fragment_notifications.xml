@@ -28,12 +28,15 @@
         android:id="@+id/searchView"
         android:layout_width="345dp"
         android:layout_height="57dp"
-        android:background="#706E6E"
+        android:background="#DDD7D7"
+        android:queryHint="Ingrese un tipo de producto"
+        android:iconifiedByDefault="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.044" />
+        app:layout_constraintVertical_bias="0.044"
+        />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"

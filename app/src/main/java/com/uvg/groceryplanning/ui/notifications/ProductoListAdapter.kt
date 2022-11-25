@@ -10,11 +10,7 @@ import com.uvg.groceryplanning.databinding.ProductoItemBinding
 class productoListAdapter() : RecyclerView.Adapter<productoListAdapter.productoListHolder>() {
     inner class productoListHolder(val binding: ProductoItemBinding) : RecyclerView.ViewHolder(binding.root)
 
-    val producto1 = Producto(0, "Leche", "lacteos", "walmart", "Producto marca Pinito")
-    val producto2 = Producto(1, "Jugo", "bebidas", "paiz", "Producto marca Jumex")
-    val producto3 = Producto(2, "Jabon", "higiene", "la torre", "Producto marca Dove")
-
-    val list = mutableListOf<Producto>(producto1, producto2, producto3)
+    var list = mutableListOf<Producto>()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): productoListHolder {
         val binding = ProductoItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
@@ -27,6 +23,7 @@ class productoListAdapter() : RecyclerView.Adapter<productoListAdapter.productoL
         holder.binding.nombre.text = producto.nombre
         holder.binding.tipo.text = producto.tipo
         holder.binding.supermercado.text = producto.supermercado
+
 
         /*val pokemon = pokemonList[position]
         holder.binding.pokemonName.text = pokemon.name
@@ -60,6 +57,10 @@ class productoListAdapter() : RecyclerView.Adapter<productoListAdapter.productoL
         }
 
 
+    }
+
+    fun setData(data: MutableList<Producto>){
+        list = data
     }
 
     override fun getItemCount(): Int {
