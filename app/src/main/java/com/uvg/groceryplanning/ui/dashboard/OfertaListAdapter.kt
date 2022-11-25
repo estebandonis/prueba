@@ -2,6 +2,7 @@ package com.uvg.groceryplanning.ui.dashboard
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.uvg.groceryplanning.database.Ofertas.Oferta
 import com.uvg.groceryplanning.databinding.OfertasItemBinding
@@ -44,10 +45,10 @@ class ofertaListAdapter() : RecyclerView.Adapter<ofertaListAdapter.ofertaListHol
                 }
 
             })*/
-        /*holder.binding.cardView.setOnClickListener(){
-            val action = MainFragmentDirections.actionMainFragmentToDetailFragment(position, pokemon.name)
+        holder.binding.cardView.setOnClickListener(){
+            val action = DashboardFragmentDirections.actionNavigationDashboardToOfertaDetail(oferr.oferta, oferr.producto, oferr.supermercado)
             holder.binding.root.findNavController().navigate(action)
-        }*/
+        }
 
 
     }

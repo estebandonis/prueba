@@ -56,10 +56,10 @@ class cuponListAdapter() : RecyclerView.Adapter<cuponListAdapter.cuponListHolder
                 }
 
             })*/
-        /*holder.binding.cardView.setOnClickListener(){
-            val action = MainFragmentDirections.actionMainFragmentToDetailFragment(position, pokemon.name)
+        holder.binding.cardView.setOnClickListener(){
+            val action = HomeFragmentDirections.actionNavigationHomeToCuponDetail(cupons.porcentaje, cupons.producto, cupons.supermercado, cupons.disponibilidad)
             holder.binding.root.findNavController().navigate(action)
-        }*/
+        }
 
 
     }

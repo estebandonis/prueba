@@ -3,6 +3,8 @@
     <string name="title_home">Cupones</string>
     <string name="title_dashboard">Ofertas</string>
     <string name="title_notifications">Buscar</string>
+    <string name="CuponDetail">Cupon</string>
+    <string name="OfertaDetail">Oferta</string>
     <string name="ofertas">Ofertas</string>
     <string name="buscar">Buscar</string>
     <string name="Cupones">Cupones</string>

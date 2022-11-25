@@ -9,17 +9,61 @@
         android:id="@+id/navigation_home"
         android:name="com.uvg.groceryplanning.ui.home.HomeFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_cupon_detail"
+            app:destination="@id/cupon_detail" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_dashboard"
         android:name="com.uvg.groceryplanning.ui.dashboard.DashboardFragment"
         android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_navigation_dashboard_to_oferta_detail"
+            app:destination="@id/oferta_detail" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_notifications"
         android:name="com.uvg.groceryplanning.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/cupon_detail"
+        android:name="com.uvg.groceryplanning.ui.home.CuponDetail"
+        android:label="@string/CuponDetail"
+        tools:layout="@layout/cupon_detail_fragment">
+        <argument
+            android:name="porcentaje"
+            app:argType="string"/>
+        <argument
+            android:name="producto"
+            app:argType="string"/>
+        <argument
+            android:name="supermercado"
+            app:argType="string"/>
+        <argument
+            android:name="disponibilidad"
+            app:argType="string"/>
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/oferta_detail"
+        android:name="com.uvg.groceryplanning.ui.home.OfertaDetail"
+        android:label="OfertaDetail" >
+        <argument
+            android:name="oferta"
+            app:argType="string"/>
+        <argument
+            android:name="producto"
+            app:argType="string"/>
+        <argument
+            android:name="supermercado"
+            app:argType="string"/>
+
+    </fragment>
 </navigation>
