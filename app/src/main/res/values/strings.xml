@@ -8,6 +8,12 @@
     <string name="ofertas">Ofertas</string>
     <string name="buscar">Buscar</string>
     <string name="Cupones">Cupones</string>
+    <string name="producto">producto</string>
+    <string name="porcentaje">porcentaje</string>
+    <string name="supermercado">supermercado</string>
+    <string name="disponibilidad">disponibilidad</string>
+    <string name="tipo">tipo</string>
+    <string name="nombre">nombre</string>
+    <string name="descripcion">descripcion</string>
 
-    <string name="leche">https://walmartgt.vtexassets.com/arquivos/ids/274764/Leche-Dos-Pinos-Polvo-Pinito-1500gr-1-33379.jpg?v=637898782087170000</string>
 </resources>

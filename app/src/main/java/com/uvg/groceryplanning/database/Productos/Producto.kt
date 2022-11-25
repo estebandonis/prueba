@@ -11,5 +11,6 @@ data class Producto (
     @NonNull @ColumnInfo(name = "Nombre") val nombre: String,
     @NonNull @ColumnInfo(name = "tipo") val tipo: String,
     @NonNull @ColumnInfo(name = "Supermercado") val supermercado: String,
-    @NonNull @ColumnInfo(name = "Descripcion") val descripcion: String
+    @NonNull @ColumnInfo(name = "Descripcion") val descripcion: String,
+    @NonNull @ColumnInfo(name = "link") val link: String
 )

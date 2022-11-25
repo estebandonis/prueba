@@ -28,7 +28,7 @@
             card_view:layout_constraintEnd_toEndOf="parent"
             card_view:layout_constraintStart_toStartOf="parent"
             card_view:layout_constraintTop_toTopOf="parent"
-            tools:text="Oferta" />
+            tools:text="@string/ofertas" />
 
         <TextView
             android:id="@+id/producto"
@@ -44,7 +44,7 @@
             card_view:layout_constraintEnd_toEndOf="parent"
             card_view:layout_constraintStart_toStartOf="parent"
             card_view:layout_constraintTop_toTopOf="parent"
-            tools:text="Producto" />
+            tools:text="@string/producto" />
 
         <TextView
             android:id="@+id/supermercado"
@@ -58,7 +58,7 @@
             card_view:layout_constraintStart_toStartOf="parent"
             card_view:layout_constraintTop_toTopOf="parent"
             card_view:layout_constraintVertical_bias="0.888"
-            tools:text="Supermercado" />
+            tools:text="@string/supermercado" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

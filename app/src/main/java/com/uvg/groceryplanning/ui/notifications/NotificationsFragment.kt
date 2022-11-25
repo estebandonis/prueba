@@ -29,13 +29,13 @@ class NotificationsFragment : Fragment() {
     // onDestroyView.
     private val binding get() = _binding!!
 
-    val producto1 = Producto(0, "Leche", "lacteos", "walmart", "Producto marca Pinito")
-    val producto2 = Producto(1, "Jugo", "bebidas", "paiz", "Producto marca Jumex")
-    val producto3 = Producto(2, "Jabon", "higiene", "la torre", "Producto marca Dove")
-    val producto4 = Producto(3, "Shampoo", "higiene", "Pricesmart", "Producto marca Pantene")
-    val producto5 = Producto(4, "Bebida Deportiva", "bebidas", "Pricesmart", "Producto marca Powerade")
+    val producto1 = Producto(0, "Leche", "lacteos", "walmart", "Producto marca Pinito", "https://walmartgt.vtexassets.com/arquivos/ids/274764/Leche-Dos-Pinos-Polvo-Pinito-1500gr-1-33379.jpg?v=637898782087170000")
+    val producto2 = Producto(1, "Jugo", "bebidas", "paiz", "Producto marca Jumex", "https://walmartgt.vtexassets.com/arquivos/ids/290220/Jugo-Jumex-Manzana-473ml-1-52207.jpg?v=637952242734930000")
+    val producto3 = Producto(2, "Jabon", "higiene", "la torre", "Producto marca Dove", "https://pbs.twimg.com/media/DsYS8O1W0AEVz8x.jpg")
+    val producto4 = Producto(3, "Shampoo", "higiene", "Pricesmart", "Producto marca Pantene", "https://asset-americas.unileversolutions.com/content/dam/unilever/dove/global/pack_shot/range/personal_care_unidentified/personal_care_unidentified/Purely_pampering_range-296742.png.ulenscale.460x460.png")
+    val producto5 = Producto(4, "Bebida Deportiva", "bebidas", "Pricesmart", "Producto marca Powerade", "https://cemacogt.vteximg.com.br/arquivos/ids/396520-1000-1000/788259_1.jpg?v=638040867257870000")
 
-    val list = mutableListOf<Producto>(producto1, producto2, producto3)
+    val list = mutableListOf<Producto>(producto1, producto2, producto3, producto4, producto5)
 
     override fun onCreateView(
         inflater: LayoutInflater,

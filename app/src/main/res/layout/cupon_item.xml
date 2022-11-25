@@ -32,13 +32,13 @@
             card_view:layout_constraintStart_toEndOf="@+id/porcentaje"
             card_view:layout_constraintTop_toTopOf="parent"
             card_view:layout_constraintVertical_bias="0.168"
-            tools:text="Pikachu" />
+            tools:text="@string/producto" />
 
         <TextView
             android:id="@+id/porcentaje"
             android:layout_width="218dp"
             android:layout_height="42dp"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="12dp"
             android:padding="8dp"
             android:textAlignment="textEnd"
             android:textColor="#000000"
@@ -47,8 +47,8 @@
             card_view:layout_constraintBottom_toTopOf="@+id/supermercado"
             card_view:layout_constraintStart_toStartOf="parent"
             card_view:layout_constraintTop_toTopOf="parent"
-            card_view:layout_constraintVertical_bias="0.533"
-            tools:text="Pikachu" />
+            card_view:layout_constraintVertical_bias="0.428"
+            tools:text="@string/porcentaje" />
 
         <TextView
             android:id="@+id/supermercado"
@@ -62,13 +62,13 @@
             card_view:layout_constraintBottom_toBottomOf="parent"
             card_view:layout_constraintStart_toStartOf="parent"
             card_view:layout_constraintTop_toTopOf="parent"
-            card_view:layout_constraintVertical_bias="0.807"
-            tools:text="Pikachu" />
+            card_view:layout_constraintVertical_bias="0.853"
+            tools:text="@string/supermercado" />
 
         <TextView
             android:id="@+id/disponibilidad"
-            android:layout_width="143dp"
-            android:layout_height="33dp"
+            android:layout_width="140dp"
+            android:layout_height="39dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="28dp"
             android:padding="8dp"
@@ -79,7 +79,7 @@
             card_view:layout_constraintEnd_toEndOf="parent"
             card_view:layout_constraintTop_toBottomOf="@+id/producto"
             card_view:layout_constraintVertical_bias="0.0"
-            tools:text="Pikachu" />
+            tools:text="@string/disponibilidad" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

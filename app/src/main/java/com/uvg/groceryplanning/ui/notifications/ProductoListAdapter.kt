@@ -31,7 +31,7 @@ class productoListAdapter() : RecyclerView.Adapter<productoListAdapter.productoL
         val imageView = holder.binding.imageView
 
         Picasso.get()
-            .load("https://i1.wp.com/superlacasita.com.gt/wp-content/uploads/2021/03/Leche-Entera-en-Polvo-Pinito-Dos-Pinos-120gr.jpg?fit=600%2C600&ssl=1")
+            .load(producto.link)
             //.centerCrop()
             .resize(200,200)
             .centerInside()
@@ -52,7 +52,9 @@ class productoListAdapter() : RecyclerView.Adapter<productoListAdapter.productoL
             val action = NotificationsFragmentDirections.actionNavigationNotificationsToProductoDetail(
                 producto.nombre,
                 producto.tipo,
-                producto.supermercado
+                producto.supermercado,
+                producto.descripcion,
+                producto.link
             )
             holder.binding.root.findNavController().navigate(action)
         }
