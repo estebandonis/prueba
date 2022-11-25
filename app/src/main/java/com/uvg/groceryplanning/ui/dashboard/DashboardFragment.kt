@@ -7,12 +7,16 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.uvg.groceryplanning.databinding.FragmentDashboardBinding
+import com.uvg.groceryplanning.ui.home.cuponListAdapter
 
 class DashboardFragment : Fragment() {
 
     private var _binding: FragmentDashboardBinding? = null
-
+    private lateinit var recyclerView: RecyclerView
+    private var isLinearLayoutManager = true
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
@@ -22,17 +26,18 @@ class DashboardFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val dashboardViewModel =
-            ViewModelProvider(this).get(DashboardViewModel::class.java)
-
         _binding = FragmentDashboardBinding.inflate(inflater, container, false)
-        val root: View = binding.root
+        return binding.root
+    }
 
-        val textView: TextView = binding.textDashboard
-        dashboardViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
-        return root
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        recyclerView = binding.recyclerView
+        super.onViewCreated(view, savedInstanceState)
+
+
+        recyclerView.layoutManager = LinearLayoutManager(context)
+        val adapter = ofertaListAdapter()
+        recyclerView.adapter = adapter
     }
 
     override fun onDestroyView() {

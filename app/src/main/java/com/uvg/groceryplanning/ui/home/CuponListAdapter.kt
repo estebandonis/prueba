@@ -3,6 +3,7 @@ package com.uvg.groceryplanning.ui.home
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.navigation.findNavController
+import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.uvg.groceryplanning.database.Cupones.Cupon
 import com.uvg.groceryplanning.databinding.CuponItemBinding
@@ -12,7 +13,11 @@ import java.lang.Exception
 class cuponListAdapter() : RecyclerView.Adapter<cuponListAdapter.cuponListHolder>() {
     inner class cuponListHolder(val binding: CuponItemBinding) : RecyclerView.ViewHolder(binding.root)
 
-    private var list = mutableListOf<Cupon>()
+    val cupon1 = Cupon(0, "50% de descuento", "papel", "walmart", "disponible")
+    val cupon2 = Cupon(1, "30% de descuento", "toallas", "paiz", "disponible")
+    val cupon3 = Cupon(2, "40% de descuento", "ranas", "novex", "disponible")
+
+    val list = mutableListOf<Cupon>(cupon1,cupon2,cupon3)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): cuponListHolder {
         val binding = CuponItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
@@ -20,10 +25,12 @@ class cuponListAdapter() : RecyclerView.Adapter<cuponListAdapter.cuponListHolder
     }
 
     override fun onBindViewHolder(holder: cuponListHolder, position: Int) {
-        holder.binding.porcentaje.text = "porcentaje"
-        holder.binding.producto.text = "producto"
-        holder.binding.supermercado.text = "supermercado"
-        holder.binding.disponibilidad.text = "disponibilidad"
+        val cupons = list[position]
+
+        holder.binding.porcentaje.text = cupons.porcentaje
+        holder.binding.producto.text = cupons.producto
+        holder.binding.supermercado.text = cupons.supermercado
+        holder.binding.disponibilidad.text = cupons.disponibilidad
 
         /*val pokemon = pokemonList[position]
         holder.binding.pokemonName.text = pokemon.name
@@ -58,6 +65,6 @@ class cuponListAdapter() : RecyclerView.Adapter<cuponListAdapter.cuponListHolder
     }
 
     override fun getItemCount(): Int {
-        return 3
+        return list.size
     }
 }
